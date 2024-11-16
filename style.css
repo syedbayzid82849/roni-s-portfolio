@@ -21,7 +21,8 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    background-color: rgb(54, 69, 79);
+    background: linear-gradient(90deg, #F2F5F9 23.44%, #FEF4F4 100%);
+
 }
 
 header ul {
@@ -35,9 +36,38 @@ header ul li {
     display: inline-block;
 }
 
+.contact-button {
+    background-color: #f6e82e;
+    border: none;
+    border-radius: 25px;
+    position: relative;
+    top: -12px;
+    margin-right: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-family: "Titillium Web", serif;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-button:hover {
+    background-color: #ffb703;
+    transform: scale(1.05);
+}
+
+.contact-button a:hover {
+    color: #fff;
+}
+
+
 header ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(11, 1, 1);
     font-weight: 500;
     padding: 20px;
     position: relative;
@@ -45,22 +75,9 @@ header ul li a {
     z-index: 1;
 }
 header ul li a:hover {
-    color: #00aaff;
+    color: #f6e82e;
 }
 
-/* Style for the span inside the link */
-header ul li a span {
-    position: absolute;
-    left: 50%;
-    bottom: -3px;
-    width: 0;
-    height: 2px;
-    background-color: #00aaff;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-}
-
-/* Adding lines on both sides of the span */
 header ul li a::before,
 header ul li a::after {
     content: '';
@@ -68,7 +85,7 @@ header ul li a::after {
     width: 0;
     height: 2px;
     bottom: -3px;
-    background-color: #00aaff;
+    background-color: #f6e82e;
     transition: width 0.3s ease;
 }
 
@@ -101,7 +118,7 @@ header img {
 .hero-section{
     width: 100%;
     height: 650px;
-    background-color:rgb(228, 230, 231);
+    background: linear-gradient(90deg, #F2F5F9 23.44%, #FEF4F4 100%);
     position: absolute;
     top: -15px;
     display: grid;

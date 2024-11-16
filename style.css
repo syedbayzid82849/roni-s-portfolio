@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+
+header {
+
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: rgb(54, 69, 79);
+}
+
+header ul {
+    display: flex;
+    gap: 15px;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+header ul li a:hover {
+    color: #00aaff;
+}
+
+/* Style for the span inside the link */
+header ul li a span {
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #00aaff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+/* Adding lines on both sides of the span */
+header ul li a::before,
+header ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    background-color: #00aaff;
+    transition: width 0.3s ease;
+}
+
+header ul li a::before {
+    right: 50%;
+}
+
+header ul li a::after {
+    left: 50%;
+}
+
+/* Hover effect to expand lines and span */
+header ul li a:hover span {
+    width: 100%;
+}
+
+header ul li a:hover::before,
+header ul li a:hover::after {
+    width: 50%;
+}
+
+
+header img {
+    margin-top: 4px;
+    width: 140px;
+    height: 165px;
+    padding: 10px;
+}
+
+.hero-section{
+    width: 100%;
+    height: 650px;
+    background-color:rgb(228, 230, 231);
+    position: absolute;
+    top: -15px;
+    display: grid;
+    justify-content:space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+}
+.hero-section img{
+    width: 330px;
+    height: 330px;
+    margin-left: 100px;
+    margin-top: 180px;
+    border-radius: 50%;
+}
+
+.hero-section .about-roni h1{
+    margin-top: 125px;
+}
+.hero-section .about-roni p{
+    margin-top: 30px;
+    font-family: "Titillium Web", serif;
+    font-weight: 200;
+    font-style: normal;
+}

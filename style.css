@@ -2,16 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    
 }
 
 body {
     width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
 }
 
 
-header {
+
+nav {
 
     position: relative;
     width: 100%;
@@ -24,17 +29,16 @@ header {
     background: linear-gradient(90deg, #F2F5F9 23.44%, #FEF4F4 100%);
 
 }
-
-header ul {
+nav ul {
     display: flex;
     gap: 15px;
 }
 
-header ul li {
+nav ul li {
     position: relative;
-    list-style: none;
     display: inline-block;
 }
+
 
 .contact-button {
     background-color: #f6e82e;
@@ -50,19 +54,13 @@ header ul li {
     transition: all 0.3s ease-in-out;
 }
 
-.contact-button a {
-    text-decoration: none;
-    color: #000;
-}
 
 .contact-button:hover {
     background-color: #ffb703;
     transform: scale(1.05);
 }
 
-.contact-button a:hover {
-    color: #fff;
-}
+
 
 
 header ul li a {
@@ -75,7 +73,7 @@ header ul li a {
     z-index: 1;
 }
 header ul li a:hover {
-    color: #f6e82e;
+    color: #19087a;
 }
 
 header ul li a::before,
@@ -97,7 +95,6 @@ header ul li a::after {
     left: 50%;
 }
 
-/* Hover effect to expand lines and span */
 header ul li a:hover span {
     width: 100%;
 }
@@ -126,13 +123,18 @@ header img {
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
+    
+
 }
 .hero-section img{
     width: 330px;
     height: 330px;
-    margin-left: 100px;
-    margin-top: 180px;
+    margin-left: 160px;
+    margin-top: 70px;
     border-radius: 50%;
+}
+.about-roni{
+    margin-bottom: 120px;
 }
 
 .hero-section .about-roni h1{
@@ -143,4 +145,25 @@ header img {
     font-family: "Titillium Web", serif;
     font-weight: 200;
     font-style: normal;
+}
+.btn{
+    display: flex;
+    gap: 50px;
+    margin-left: 100px;
+    margin-top: 45px;
+    position: absolute;
+}
+.btn button{
+    border: none;
+    width: 150px;
+    height: 60px;
+    color: black;
+    background-color: #Ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.btn button i{
+    margin: 0 10px;
 }
